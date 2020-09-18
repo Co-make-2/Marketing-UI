@@ -56,18 +56,126 @@ table {
 /***************************END RESET*******************************/
 html{
     font-size:62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
 }
+
 
 body{
     background: #eae8dc;
 }
 nav{
     font-size:3rem;
-    color:white;
+    color:#eae8dc;
+    background:#0f0d35;
+    height:10rem;
+    width: 100%;
+}
+label.logo{
+    color:#F4F2EC;
+    font-weight:bold;
+    
+}
+nav ul{
+    float:right;
+    margin-right:2rem;
 }
 ul li a{
     font-size:2rem;
     color:white;
     text-decoration: none;
 }
+nav ul li{
+    display:inline-block;
+    line-height: 3rem;
+    mar
+}
 
+nav ul li a{
+    font-size:2rem;
+    text-transform:uppercase;
+    padding: 7px 13px;
+    border-radius:5px;
+}
+
+a.active,a.hover{
+    background: #eae8dc;
+    transition: .10s;
+}
+.checkbtn{
+    font-size:3rem;
+    color:#eae8dc;
+    float:right;
+    margin-right:40px;
+    cursor:pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    label.logo{
+        font-size:3rem;
+        padding-left:5rem;
+    }
+    nav ul li a{
+        font-size:2rem;
+
+    }
+
+}
+@media(max-width:858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        top:8rem;
+        left:-100%;
+        text-align: center;
+        transition:all .5s;
+
+    }  
+    nav ul li{
+        display: block;
+        margin:50px;
+
+    }
+    nav ul li a{
+        font-size:2rem;
+    }
+    a:hover,a.active{
+        background:none;
+        color:0082e;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+slider {
+    display: block;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position:absolute;
+
+    
+}
+slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation:slide 10s infinite;
+    overflow: hidden;
+}
+slide:nth-child(1){
+    animation-delay:-1s;
+    background-image: ;
+    background-size:cover;
+    background-position:center;
+}
