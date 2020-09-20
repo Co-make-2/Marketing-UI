@@ -195,7 +195,6 @@ img {
     width:30%;
     height: 90%;
     margin-top:1rem;
-    
     float:right;
 
 }
@@ -217,6 +216,7 @@ img {
 /******VOTERS CARDS*********/
 .container{
     display: flexbox;
+    justify-content: space-around;
 }
 
 
@@ -225,37 +225,25 @@ img {
     height: 80%;
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
    
-}
-.title{
-    font-size:3rem;
-    color:white;
+   
 }
 
-.voters-cards-a{
-    width:25%;
+.statements{
+    margin-bottom:2rem;
+}
+.middle-section{
+    height: ;
+}
+.hd-md-section{
+    text-align: center;
+}
+
+footer{
     height: 50%;
-    border:5px solid blue;
-    margin:1rem;
-    text-align:center;
-    overflow:hidden;
-   
-    display: block;
-}
-.voters-cards-a, h1{
-    font-size:2rem;
-    margin: 1rem;
-}
-.voters-cards-a img{
-    width: 80%;
-    height: 40%;
-    margin:0 auto;
-    border: 5px solid blue;
-    padding:0;
-}
-.btn-1,.btn-2{
- margin:1rem;
+    width: 100%;
+    background: darkblue;
+    color:white;
 }
 
 
