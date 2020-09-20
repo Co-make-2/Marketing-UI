@@ -161,7 +161,19 @@ a.active,a.hover{
 
 img {
     width: 100%;
-    height: 90%;
+    height: 40%;
+}
+.img-cards{
+    height: 0;
+    margin-bottom: 0;
+}
+.img-cards img{
+    width:80%;
+    height: 40%;
+    border:3px solid black;
+}
+.img-middle-section img{
+    height: 60%;
 }
 
 
@@ -202,3 +214,49 @@ img {
     font-size:2rem;
     margin:1rem;
 }
+/******VOTERS CARDS*********/
+.container{
+    display: flexbox;
+}
+
+
+.issue-sec{
+    widows: 100%;
+    height: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+.title{
+    font-size:3rem;
+    color:white;
+}
+
+.voters-cards-a{
+    width:25%;
+    height: 50%;
+    border:5px solid blue;
+    margin:1rem;
+    text-align:center;
+    overflow:hidden;
+   
+    display: block;
+}
+.voters-cards-a, h1{
+    font-size:2rem;
+    margin: 1rem;
+}
+.voters-cards-a img{
+    width: 80%;
+    height: 40%;
+    margin:0 auto;
+    border: 5px solid blue;
+    padding:0;
+}
+.btn-1,.btn-2{
+ margin:1rem;
+}
+
+
+
