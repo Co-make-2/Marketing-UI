@@ -62,6 +62,8 @@ html{
 
 body{
     background: #eae8dc;
+    width: 100%;
+    margin :0 auto;
 }
 nav{
     font-size:3rem;
@@ -69,6 +71,7 @@ nav{
     background:#0f0d35;
     height:10rem;
     width: 100%;
+   
 }
 label.logo{
     color:#F4F2EC;
@@ -86,8 +89,8 @@ ul li a{
 }
 nav ul li{
     display:inline-block;
-    line-height: 3rem;
-    mar
+    line-height: 1rem;
+    
 }
 
 nav ul li a{
@@ -105,14 +108,16 @@ a.active,a.hover{
     font-size:3rem;
     color:#eae8dc;
     float:right;
-    margin-right:40px;
+    margin-right:30px;
     cursor:pointer;
     display: none;
 
 }
+
 #check{
     display: none;
 }
+
 @media(max-width:952px){
     label.logo{
         font-size:3rem;
@@ -132,7 +137,6 @@ a.active,a.hover{
         position:fixed;
         width: 100%;
         height: 100vh;
-        top:8rem;
         left:-100%;
         text-align: center;
         transition:all .5s;
@@ -155,27 +159,46 @@ a.active,a.hover{
     }
 }
 
-slider {
-    display: block;
+img {
     width: 100%;
-    height: 70%;
-    overflow: hidden;
-    position:absolute;
+    height: 90%;
+}
 
-    
-}
-slider > *{
-    position: absolute;
-    display: block;
+
+
+#top-section{
     width: 100%;
-    height: 100%;
-    background: black;
-    animation:slide 10s infinite;
-    overflow: hidden;
+    height: 50%;
+    display: flexbox;
+    
+ 
 }
-slide:nth-child(1){
-    animation-delay:-1s;
-    background-image: ;
-    background-size:cover;
-    background-position:center;
+
+.img-top-section{
+
+    margin-left:1rem;
+}
+
+.img-middle-section{
+    width:30%;
+    height: 90%;
+    margin-top:1rem;
+    
+    float:right;
+
+}
+.statements{
+    border:5px solid #0f0d35;
+    width: 90%;
+    height: 40%;
+    margin-left:6rem;
+
+}
+.statements h1{
+    font-size:3rem;
+    margin:1rem;
+}
+.statements p{
+    font-size:2rem;
+    margin:1rem;
 }
